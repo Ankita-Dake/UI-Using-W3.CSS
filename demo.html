@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<!-- Sidebar -->
+<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+  <a href="demo.html" class="w3-bar-item w3-button w3-text-blue w3-pink">Home </a>
+  <a href="info.html" class="w3-bar-item w3-button w3-text-blue w3-pink">Index</a>
+  <a href="about.html" class="w3-bar-item w3-button w3-text-blue w3-black">About</a>
+  <a href="contact.html" class="w3-bar-item w3-button w3-text-blue w3-black">Contact</a>
+</div>
+
+<!-- Page Content -->
+<div class="w3-pale-red">
+  <button class="w3-button w3-aqua w3-xlarge" onclick="w3_open()">☰</button>
+  <div class="w3-container w3-gray">
+    <h1 style="text-align: center;">My Page</h1>
+  </div>
+</div>
+
+<div class="w3-row" style="margin-top: 20px;">
+    <div class=" w3-half w3-container">
+        <img src="image/img.jpg" class="w3-image" >
+    </div>
+    <div class="w3-half w3-container">
+        <img src="image/img2.jpg" class="w3-image " >
+    </div>
+</div>
+
+<div class="w3-container">
+    <p></p>
+</div>
+<!-- <div class="w3-container"> -->
+<!-- <p>This sidebar is hidden by default, (style="display:none")</p> -->
+<!-- <p>You must click on the "hamburger" icon (top left) to open it.</p> -->
+<!-- <p>The sidebar will hide a part of the page content.</p> -->
+<!-- </div> -->
+
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+     
+</body>
+</html> 
